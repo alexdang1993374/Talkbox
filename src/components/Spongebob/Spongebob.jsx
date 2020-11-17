@@ -48,6 +48,9 @@ export default function Spongebob() {
 
   return (
     <>
+    <div className="spongeBoard">
+
+
       <h1>Spongebob Soundboard</h1>
       <span
         class="container"
@@ -169,6 +172,7 @@ export default function Spongebob() {
         <img src={future} alt="Future." />
         <span class="text-overlay">Future</span>
       </span>
+    </div>
     </>
   );
 }

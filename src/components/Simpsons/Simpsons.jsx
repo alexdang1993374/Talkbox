@@ -48,6 +48,8 @@ export default function Simpsons() {
 
   return (
     <>
+    <div className="simpBoard">
+
       <h1>The Simpsons Soundboard</h1>
       <span
         class="container"
@@ -169,6 +171,7 @@ export default function Simpsons() {
         <img src={carumba} alt="Ay Carumba" />
         <span class="text-overlay">¡Ay, caramba!</span>
       </span>
+    </div>
     </>
   );
 }

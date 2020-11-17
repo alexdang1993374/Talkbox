@@ -1,14 +1,13 @@
-body {
+.simpBoard {
 	text-align: center;
 	font-family: 'Kalam', cursive;
-	background: #b91461;
-	background: radial-gradient(circle, rgb(54, 20, 201) 8%, rgba(255,245,245,1) 100%);
+	background: #FFFCF2;
+	
 }
 
 h1 {
   line-height: 1em;
-  font-family: 'Slackey';
-  color: aqua;
+  color: #7D82B8;
   /* cursor: pointer; */
 }
 
