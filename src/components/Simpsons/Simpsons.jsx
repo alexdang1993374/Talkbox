@@ -16,7 +16,7 @@ import dead from "./img/dead.jpg";
 
 import flanders from "./img/flanders.gif";
 
-import hell from "./img/hell.jpg";
+import hell from "./img/hell.gif";
 
 import rake from "./img/rake.gif";
 
