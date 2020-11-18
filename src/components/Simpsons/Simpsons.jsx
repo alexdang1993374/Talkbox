@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import useSound from "use-sound";
 import "./Simpsons.css";
 
-import zaus from "./img//zaus.jpg";
+import zaus from "./img/zaus.jpg";
 
 import mole from "./img/mole.jpg";
 
@@ -29,6 +29,8 @@ import carumba from "./img/carumba.jpg";
 import comb from "./sounds/comboSimp.wav";
 
 export default function Simpsons() {
+  // const [randomQuote, setRandomQuote] = useState("");
+
   const [play, { stop }] = useSound(comb, {
     sprite: {
       zaus: [0, 3576],
@@ -46,132 +48,137 @@ export default function Simpsons() {
     },
   });
 
+  // function playRandom() {
+  //   let quotes = ["zaus", "mole", "haha", "duff"];
+  //   let randomIndex = Math.floor(Math.random() * quotes.length);
+  //   setRandomQuote(quotes[randomIndex]);
+  // }
+
   return (
     <>
-    <div className="simpBoard">
-
-      <h1>The Simpsons Soundboard</h1>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "zaus" });
-        }}
-      >
-        <img src={zaus} alt="Dr. Zaius" />
-        <span class="text-overlay">Dr. Zaius</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "mole" });
-        }}
-      >
-        <img src={mole} alt="Moleman" />
-        <span class="text-overlay">Gay for Moleman</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "haha" });
-        }}
-      >
-        <img src={haha} alt="Haha" />
-        <span class="text-overlay">Haha</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "duff" });
-        }}
-      >
-        <img src={duff} alt="Duffman" />
-        <span class="text-overlay">Oh Yeah!!</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "hippo" });
-        }}
-      >
-        <img src={hippo} alt="Mmmmm Hippo" />
-        <span class="text-overlay">Mmmmm</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "dead" });
-        }}
-      >
-        <img src={dead} alt="Stop he's already dead" />
-        <span class="text-overlay">Stop he's already dead</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "flanders" });
-        }}
-      >
-        <img src={flanders} alt="Stupid sexy Flanders" />
-        <span class="text-overlay">Stupid sexy Flanders</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "hell" });
-        }}
-      >
-        <img src={hell} alt="Krusty the Clown" />
-        <span class="text-overlay">What the hell</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "rake" });
-        }}
-      >
-        <img src={rake} alt="Sideshow Bob" />
-        <span class="text-overlay">Urghhh</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "blurst" });
-        }}
-      >
-        <img src={blurst} alt="Monkey at a typewriter" />
-        <span class="text-overlay">The greatest novel known to man</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "damn" });
-        }}
-      >
-        <img src={damn} alt="Todd Flanders" />
-        <span class="text-overlay">Vegetables</span>
-      </span>
-      <span
-        class="container"
-        onClick={() => {
-          stop();
-          play({ id: "carumba" });
-        }}
-      >
-        <img src={carumba} alt="Ay Carumba" />
-        <span class="text-overlay">¡Ay, caramba!</span>
-      </span>
-    </div>
+      <div className="simpBoard">
+        <h1>The Simpsons</h1>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "zaus" });
+          }}
+        >
+          <img src={zaus} alt="Dr. Zaius" />
+          <span class="text-overlay">Dr. Zaius</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "mole" });
+          }}
+        >
+          <img src={mole} alt="Moleman" />
+          <span class="text-overlay">Gay for Moleman</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "haha" });
+          }}
+        >
+          <img src={haha} alt="Haha" />
+          <span class="text-overlay">Haha</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "duff" });
+          }}
+        >
+          <img src={duff} alt="Duffman" />
+          <span class="text-overlay">Oh Yeah!!</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "hippo" });
+          }}
+        >
+          <img src={hippo} alt="Mmmmm Hippo" />
+          <span class="text-overlay">Mmmmm</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "dead" });
+          }}
+        >
+          <img src={dead} alt="Stop he's already dead" />
+          <span class="text-overlay">Stop he's already dead</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "flanders" });
+          }}
+        >
+          <img src={flanders} alt="Stupid sexy Flanders" />
+          <span class="text-overlay">Stupid sexy Flanders</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "hell" });
+          }}
+        >
+          <img src={hell} alt="Krusty the Clown" />
+          <span class="text-overlay">What the hell</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "rake" });
+          }}
+        >
+          <img src={rake} alt="Sideshow Bob" />
+          <span class="text-overlay">Urghhh</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "blurst" });
+          }}
+        >
+          <img src={blurst} alt="Monkey at a typewriter" />
+          <span class="text-overlay">The greatest novel known to man</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "damn" });
+          }}
+        >
+          <img src={damn} alt="Todd Flanders" />
+          <span class="text-overlay">Vegetables</span>
+        </span>
+        <span
+          class="container"
+          onClick={() => {
+            stop();
+            play({ id: "carumba" });
+          }}
+        >
+          <img src={carumba} alt="Ay Carumba" />
+          <span class="text-overlay">¡Ay, caramba!</span>
+        </span>
+      </div>
     </>
   );
 }

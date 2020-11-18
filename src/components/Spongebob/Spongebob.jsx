@@ -51,7 +51,7 @@ export default function Spongebob() {
     <div className="spongeBoard">
 
 
-      <h1>Spongebob Soundboard</h1>
+      <h1>Spongebob Squarepants</h1>
       <span
         class="container"
         onClick={() => {

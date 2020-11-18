@@ -15,6 +15,11 @@ export default function NavBar() {
             <button className="navButton">The Simpsons</button>
           </NavLink>
         </div>
+        <div className="navButtonDiv">
+          <NavLink to="/Sunny">
+            <button className="navButton">It's Always Sunny in Philadelphia</button>
+          </NavLink>
+        </div>
       </div>
     </>
   );
