@@ -27,6 +27,8 @@ import wild from "./img/wild.gif";
 
 import comb from "./sounds/combSunny.wav";
 
+let damn = 0;
+
 export default function Sunny() {
   const [randomQuote, setRandomQuote] = useState("");
 
@@ -67,8 +69,10 @@ export default function Sunny() {
       "god8",
       "god9",
     ];
-    let randomIndex = Math.floor(Math.random() * quotes.length);
-    setRandomQuote(quotes[randomIndex]);
+    // let randomIndex = Math.floor(Math.random() * quotes.length);
+    setRandomQuote(quotes[damn]);
+    damn++
+    if (damn > 8) damn = 0
   }
 
   return (
