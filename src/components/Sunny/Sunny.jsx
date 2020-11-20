@@ -169,7 +169,7 @@ export default function Sunny() {
           }}
         >
           <img src={milk} alt="Fightmilk" />
-          <span class="text-overlay">Fightmilk</span>
+          {/* <span class="text-overlay">Fightmilk</span> */}
         </span>
         <span
           class="container"

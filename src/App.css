@@ -26,6 +26,22 @@ img {
   border-radius: 10px;
 }
 
+.homeGif {
+  margin-top: 30px;
+  width: 60%;
+  height: 800px;
+  cursor: pointer;
+}
+
+.homeGif:hover {
+	opacity:0.8;
+
+}
+
+.homeGif:active {
+	opacity:0.5;
+}
+
 .container {
   position: relative;
   text-align: center;
